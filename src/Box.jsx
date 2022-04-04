@@ -1,19 +1,32 @@
-import React from 'react'
-const Box = (props) =>{
-return(
-    <>
-    <div className="mybox" style={{height:"200px",width:"200px",backgroundColor:props.colorName, margin:"30px"}}>{props.boxName}</div>
-    </>
-)
+import React,{Component} from "react";
+import PropTypes from 'prop-types'
+class Box extends Component {    //const Box = (props) =>
+  render() {
+    return (
+      <>
+        <div
+          className="mybox"
+          style={{
+            height: "200px",
+            width: "200px",
+            backgroundColor: this.props.colorName,
+            margin: "30px",
+          }}
+        >
+          {this.props.boxName}
+        </div>
+      </>
+    );
+  }
 }
-export default Box
+export default Box;
 
 
-
-function add(a,b)
-{
-    return a+b
+Box.propTypes={
+    colorName:PropTypes.string,
+    boxName:PropTypes.string,
 }
-
-add(5,6)
-add(10,20)
+Box.defaultProps={
+    colorName:"Orange",
+    boxName:"myBox"
+}

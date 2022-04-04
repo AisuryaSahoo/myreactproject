@@ -10,7 +10,7 @@ const Header = () => {
           <Box boxName="BOX-1" colorName="yellow"/>
           <Box boxName="BOX-2"colorName="blue"/>
           <Box boxName="BOX-3" colorName="green"/>
-          <Box boxName="BOX-4" colorName="white"/>
+          <Box/>
         </div>
       </div>
     </>
