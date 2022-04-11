@@ -19,7 +19,8 @@ class LifeCycleComp extends Component{
         this.setState({value:20})
     }
     render(){
-        console.log("render method called")
+        
+        console.log("render method called ");
         
         return(
             <React.Fragment>
