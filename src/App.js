@@ -1,18 +1,16 @@
 // class based / function based
 import React from 'react';
-import Nav from './Nav';
+// import Nav from './Nav';
 // import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 // import {Component} from 'react';
-import MyState from './MyState';
+// import MyState from './MyState';
+import LifeCycleComp from './LifeCycleComp';
 
 const App = () =>{
   return (
         <>
-        <Nav/>
-        {/* <Header/> */}
-        <MyState></MyState>
-        <Footer/>
+        <LifeCycleComp/>
         </>
         )
 }
